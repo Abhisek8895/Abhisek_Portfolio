@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Abhisek Mishra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/css/theme.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="nav-brand" href="index.html"><span class="dot">$</span> abhisek.mishra</a>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">home</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="projects.html">projects</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="wrap" style="padding-top:128px;">
+  <section style="padding-top:0; border-bottom:none;">
+    <p class="cmd-label">ls projects/</p>
+    <div class="section-head"><h2>Selected work</h2></div>
+
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="all">all</button>
+      <button class="filter-tab" data-filter="genai">genai / llm</button>
+      <button class="filter-tab" data-filter="ml">ml / automation</button>
+    </div>
+
+    <div class="project-grid">
+
+      <div class="project-card" data-cat="genai" data-open-modal="g1">
+          <p class="project-num">01</p>
+          <div class="project-body">
+            <span class="project-cat-tag">resume screening</span>
+            <h3>AI Resume Analyser</h3>
+            <p>LLM-powered resume analysis that scores fit against a job description and surfaces gaps and improvement suggestions.</p>
+          </div>
+        </div>
+
+      <div class="project-card" data-cat="genai" data-open-modal="g2">
+        <p class="project-num">02</p>
+        <div class="project-body">
+          <span class="project-cat-tag">rag system</span>
+          <h3>Multi-PDF Chatbot</h3>
+          <p>RAG chatbot with semantic search across multiple PDFs and contextual LLM responses.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="genai" data-open-modal="g3">
+        <p class="project-num">03</p>
+        <div class="project-body">
+          <span class="project-cat-tag">llm app</span>
+          <h3>YouTube Video Summarizer</h3>
+          <p>Automated transcript extraction + LLM summarization in blog, concise, and insight formats.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="ml" data-open-modal="m2">
+        <p class="project-num">04</p>
+        <div class="project-body">
+          <span class="project-cat-tag ml">deep learning</span>
+          <h3>Audio Classification Model</h3>
+          <p>MFCC features + TensorFlow, deployed via Flask, 80% accuracy.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="ml" data-open-modal="m1">
+        <p class="project-num">05</p>
+        <div class="project-body">
+          <span class="project-cat-tag ml">classification</span>
+          <h3>Email Spam Classifier</h3>
+          <p>TF-IDF + Multinomial Naive Bayes, 95% test accuracy.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="ml" data-open-modal="m3">
+        <p class="project-num">06</p>
+        <div class="project-body">
+          <span class="project-cat-tag ml">regression</span>
+          <h3>Car Price Predictor</h3>
+          <p>OneHotEncoder + Linear Regression pipeline, 86% accuracy.</p>
+        </div>
+      </div>
+
+      <!-- <div class="project-card" data-cat="ml" data-open-modal="m4">
+        <p class="project-num">07</p>
+        <div class="project-body">
+          <span class="project-cat-tag ml">automation</span>
+          <h3>Olympics Player Data Scraper</h3>
+          <p>Selenium-driven scraper for 2024 Paris Olympics athlete data.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="ml" data-open-modal="m5">
+        <p class="project-num">07</p>
+        <div class="project-body">
+          <span class="project-cat-tag ml">web app</span>
+          <h3>Weather Application</h3>
+          <p>Real-time weather via OpenWeather API, served with Flask.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="ml" data-open-modal="m6">
+        <p class="project-num">08</p>
+        <div class="project-body">
+          <span class="project-cat-tag ml">desktop tool</span>
+          <h3>Password Manager</h3>
+          <p>Tkinter GUI generating and securely storing 15-digit passwords.</p>
+        </div>
+      </div> -->
+
+    </div>
+  </section>
+</div>
+
+<div class="modal-backdrop" id="g1">
+  <div class="modal">
+    <div class="modal-head">
+      <h3>AI Resume Analyser</h3>
+      <button class="modal-close" data-close-modal aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <a class="modal-repo" href="https://github.com/Abhisek8895/AI-resume-analyser" target="_blank" rel="noopener">↗ GitHub repository</a>
+      <h6>Description</h6>
+      <p>Built an LLM-powered tool that analyzes a resume against a target job description, scoring alignment and highlighting missing skills, keywords, and areas for improvement.</p>
+      <h6>Technologies</h6>
+      <ul><li>Python · LLM API</li><li>Prompt engineering for structured scoring output</li></ul>
+      <h6>Outcome</h6>
+      <p>A practical tool for tailoring resumes to specific roles using AI-driven feedback.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="g2">
+  <div class="modal">
+    <div class="modal-head">
+      <h3>Multi-PDF Chatbot (RAG System)</h3>
+      <button class="modal-close" data-close-modal aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <a class="modal-repo" href="https://github.com/Abhisek8895/Multi-PDF-Chatbot" target="_blank" rel="noopener">↗ GitHub repository</a>
+      <h6>Description</h6>
+      <p>Built a Retrieval-Augmented Generation chatbot that processes multiple PDFs, performs semantic search over their contents, and generates contextual AI responses grounded in the source documents.</p>
+      <h6>Technologies</h6>
+      <ul><li>Python · LangChain · Gemini API</li><li>Vector database for semantic retrieval</li></ul>
+      <h6>Outcome</h6>
+      <p>A working RAG pipeline demonstrating document ingestion, chunking, retrieval, and grounded generation end to end.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="g3">
+  <div class="modal">
+    <div class="modal-head">
+      <h3>YouTube Video Summarizer</h3>
+      <button class="modal-close" data-close-modal aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <a class="modal-repo" href="https://github.com/Abhisek8895/YouTube_Video_Summarizer" target="_blank" rel="noopener">↗ GitHub repository</a>
+      <h6>Description</h6>
+      <p>Automated transcript extraction from YouTube videos paired with LLM-based summarization, supporting multiple output formats — blog-style, concise, and insight-focused summaries.</p>
+      <h6>Technologies</h6>
+      <ul><li>Python · LLM API integration</li><li>Backend service design</li></ul>
+      <h6>Outcome</h6>
+      <p>A flexible summarization tool that adapts output style to the intended use case.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="m1">
+  <div class="modal">
+    <div class="modal-head">
+      <h3>Email Spam Classifier</h3>
+      <button class="modal-close" data-close-modal aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <a class="modal-repo" href="https://github.com/Abhisek8895/Email_Spam_Classifier" target="_blank" rel="noopener">↗ GitHub repository</a>
+      <h6>Description</h6>
+      <p>Developed a machine learning model to classify emails as spam or not spam using a labeled dataset. Email text was preprocessed and converted into numerical features using TF-IDF, then classified with Multinomial Naive Bayes, achieving 95% accuracy.</p>
+      <h6>Technologies</h6>
+      <ul><li>Python · Jupyter Notebook</li><li>Pandas, Scikit-learn</li></ul>
+      <h6>Outcome</h6>
+      <p>A lightweight spam filter that flags unwanted emails accurately with minimal preprocessing overhead.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="m2">
+  <div class="modal">
+    <div class="modal-head">
+      <h3>Audio Classification Model</h3>
+      <button class="modal-close" data-close-modal aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <a class="modal-repo" href="https://github.com/Abhisek8895/Audio-Classification" target="_blank" rel="noopener">↗ GitHub repository</a>
+      <h6>Description</h6>
+      <p>Built a deep learning model to classify audio types using the UrbanSound8k dataset. MFCC features were extracted and fed into a TensorFlow Sequential model, reaching 80% accuracy, then deployed via Flask for real-time predictions.</p>
+      <h6>Technologies</h6>
+      <ul><li>Python · TensorFlow · Flask</li><li>Librosa, Scikit-learn</li></ul>
+      <h6>Outcome</h6>
+      <p>A dependable audio classifier that turns raw sound into structured predictions, ready to plug into a real-time interface.</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="m3">
+  <div class="modal">
+    <div class="modal-head">
+      <h3>Car Price Predictor</h3>
+      <button class="modal-close" data-close-modal aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <a class="modal-repo" href="https://github.com/Abhisek8895/Car-Price-Predictor" target="_blank" rel="noopener">↗ GitHub repository</a>
+      <h6>Description</h6>
+      <p>Created a model to predict used car prices from key features. Categorical features were OneHotEncoded and fed into a Linear Regression pipeline, achieving 86% accuracy, then served through a Flask app.</p>
+      <h6>Technologies</h6>
+      <ul><li>Python · Flask</li><li>Pandas, NumPy, Scikit-learn</li></ul>
+      <h6>Outcome</h6>
+      <p>A streamlined pricing tool that gives instant, data-backed estimates for used car resale value.</p>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="modal-backdrop" id="m4">
+  <div class="modal">
+    <div class="modal-head">
+      <h3>Olympics Player Data Scraper</h3>
+      <button class="modal-close" data-close-modal aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <a class="modal-repo" href="https://github.com/Abhisek8895/olympic-player-data-scrapper" target="_blank" rel="noopener">↗ GitHub repository</a>
+      <h6>Description</h6>
+      <p>Built a scraper to extract 2024 Paris Olympics athlete data using Selenium WebDriver to automate collection from dynamic pages, then cleaned and stored as CSV.</p>
+      <h6>Technologies</h6>
+      <ul><li>Python · Selenium, Pandas</li></ul>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="m5">
+  <div class="modal">
+    <div class="modal-head">
+      <h3>Weather Application</h3>
+      <button class="modal-close" data-close-modal aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <a class="modal-repo" href="https://github.com/Abhisek8895/Weather_App" target="_blank" rel="noopener">↗ GitHub repository</a>
+      <h6>Description</h6>
+      <p>A weather application providing real-time conditions for any city via the OpenWeather API, with a Flask-powered interface.</p>
+      <h6>Technologies</h6>
+      <ul><li>Python · Flask, Requests · OpenWeather API</li></ul>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="m6">
+  <div class="modal">
+    <div class="modal-head">
+      <h3>Password Manager</h3>
+      <button class="modal-close" data-close-modal aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <a class="modal-repo" href="https://github.com/Abhisek8895/Password-Manager" target="_blank" rel="noopener">↗ GitHub repository</a>
+      <h6>Description</h6>
+      <p>A Python/Tkinter GUI password manager generating a 15-digit random password per entry, stored to the filesystem by URL and username.</p>
+      <h6>Technologies</h6>
+      <ul><li>Python · Tkinter</li></ul>
+    </div>
+  </div>
+</div> -->
+
+<footer>
+  <div class="wrap">© 2026 Abhisek Mishra — built without a framework, on purpose.</div>
+</footer>
+
+<script src="static/js/main.js"></script>
+<script>
+document.querySelectorAll('.filter-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    const filter = tab.getAttribute('data-filter');
+    document.querySelectorAll('.project-card').forEach(card => {
+      const show = filter === 'all' || card.getAttribute('data-cat') === filter;
+      card.setAttribute('data-hidden', show ? 'false' : 'true');
+    });
+  });
+});
+</script>
+</body>
+</html>
