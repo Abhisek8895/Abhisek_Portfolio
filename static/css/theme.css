@@ -174,11 +174,20 @@ section:last-of-type { border-bottom: none; }
 }
 
 .hero h1 {
-  font-size: clamp(2.2rem, 5vw, 3.4rem);
-  line-height: 1.08;
-  margin: 0 0 20px 0;
+  font-size: clamp(2.6rem, 6vw, 4rem);
+  line-height: 1.02;
+  margin: 0 0 12px 0;
 }
 .hero h1 .accent { color: var(--amber); }
+
+.hero-tagline {
+  font-size: clamp(1.2rem, 2.6vw, 1.5rem);
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--paper-dim);
+  margin: 0 0 20px 0;
+}
+.hero-tagline .accent { color: var(--amber); }
 
 .hero p.lede {
   font-size: 1.05rem;
