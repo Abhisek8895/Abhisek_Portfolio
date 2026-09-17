@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abhisek-portfolio-mh1o.onrender.com/sitemap.xml
